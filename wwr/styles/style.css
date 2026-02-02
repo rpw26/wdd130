@@ -1,0 +1,230 @@
+/* ====== GENERAL STYLES ====== */
+body {
+    margin: 0;
+    font-family: 'Lato', sans-serif;
+}
+
+/* HERO TITLE STYLING */
+.home-title {
+    text-align: center;              /* centers the text horizontally */
+    font-size: 60px;                 /* makes it big and bold */
+    font-family: 'Righteous', cursive;  /* fun, adventure-style font */
+    background: linear-gradient(45deg, #ff6b6b, #fcd34d, #6ee7b7, #3b82f6); 
+    -webkit-background-clip: text;   /* makes gradient apply to text */
+    -webkit-text-fill-color: transparent; /* hides solid color, shows gradient */
+    margin: 0;
+    padding: 20px 0;
+}
+
+
+/* HEADER GRID */
+header {
+    display: grid;
+    grid-template-columns: 150px auto;
+    padding: 10px 50px;
+    background-color: rgba(111, 115, 100, 0.8); /* semi-transparent header */
+    position: relative;
+    z-index: 10;
+}
+
+#logo_link {
+    justify-self: center;
+    align-self: center;
+    padding-top: 5px;
+}
+
+.logo {
+    max-width: 120px;  /* fixes size */
+    height: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+nav a:hover {
+    transform: scale(1.15) translateY(-4px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+}
+
+/* HERO GRID */
+#hero {
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+    margin-top: -100px; /* overlaps header */
+    position: relative;
+}
+
+#hero-box {
+    grid-column: 1/4;
+    grid-row: 1/3;
+    z-index: -1;
+}
+
+#hero-img {
+    width: 100%;
+}
+
+#hero-msg {
+    grid-column: 2/3;
+    grid-row: 1/2;
+    margin-top: 100px;
+    color: white;
+}
+
+#hero-msg h4 {
+    color: white;
+}
+
+.home-title {
+    margin: 0;
+}
+
+/* MAIN GRID */
+.home-grid {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    gap: 10px;
+    position: relative;
+}
+
+/* Card Images */
+.card-img, .mountains {
+    width: 100%;
+}
+
+/* Card placement */
+.rivers-card {
+    grid-column: 2/4;
+    grid-row: 2/3;
+}
+
+.camping-card {
+    grid-column: 5/7;
+    grid-row: 2/3;
+}
+
+.rapids-card {
+    grid-column: 8/10;
+    grid-row: 2/3;
+}
+
+/* Background and Mountains */
+#background {
+    grid-column: 1/11;
+    grid-row: 4/9;
+    background-color: #e0e0e0; /* optional placeholder */
+}
+
+.mountains {
+    grid-column: 2/7;
+    grid-row: 5/8;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+/* Message box */
+.msg {
+    grid-column: 6/10;
+    grid-row: 6/7;
+    background-color: #6f7364;
+    color: white;
+    padding: 35px;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+/* CARD HOVER EFFECT */
+.card-img {
+    border: 10px solid #d9c2a3;
+    transition: transform 0.5s, opacity 0.5s;
+    box-shadow: 5px 5px 10px #6f7364;
+}
+
+.card-img:hover {
+    opacity: 0.6;
+    transform: scale(1.1);
+}
+
+/* FOOTER FLEXBOX */
+footer {
+    background-color: #6f7364;
+    padding: 25px 50px;
+    margin-top: 200px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+}
+
+footer .social img {
+    margin: 0 5px;
+}
+
+/* RESPONSIVE DESIGN */
+@media screen and (max-width: 900px) {
+    #hero, .home-grid {
+        display: block;
+        height: auto;
+    }
+
+    nav, footer {
+        flex-direction: column;
+    }
+
+    nav a {
+        display: block;
+        padding: 15px;
+    }
+
+    #hero {
+        margin-top: 0;
+    }
+
+    #hero-msg {
+        margin-top: 0;
+    }
+
+    #hero-msg h4 {
+        display: none;
+    }
+
+    #hero-msg h1 {
+        color: #6f7364;
+    }
+
+    .home-title {
+        font-size: 25px;
+    }
+
+    .rivers-card, .camping-card, .rapids-card { 
+        margin: 50px auto;
+        width: 60%;
+    }
+
+    #background {
+        display: none;
+    }
+
+    .mountains, .msg {
+        width: 80%;
+        display: block;
+        margin: 0 auto;
+    }
+
+    footer {
+        margin-top: 25px;
+    }
+}

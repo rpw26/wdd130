@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="utf-8" />
+  <title>Site Plan - The White Rider</title>
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,400;0,700&family=Righteous&display=swap" rel="stylesheet">
+  <link type="text/css" rel="stylesheet" href="styles/site-plan-rafting.css" />
+
+  <style>
+    /* Fonts */
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Righteous', cursive;
+    }
+
+    p {
+      font-family: 'Lato', sans-serif;
+    }
+
+    /* POP-OUT NAV LINKS */
+    nav a {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    nav a:hover {
+      transform: scale(1.15) translateY(-4px);
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.35);
+    }
+
+    /* POP-OUT SITEMAP BOXES */
+    .sitemap > div {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+      cursor: pointer;
+    }
+
+    .sitemap > div:hover {
+      transform: scale(1.1) translateY(-6px);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+    }
+
+    /* POP-OUT LOGO */
+    img {
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    img:hover {
+      transform: scale(1.08);
+      box-shadow: 0 12px 25px rgba(0, 0, 0, 0.4);
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <h1>The White Rider: Only for the Brave</h1>
+    <h2>Ryan Wirth</h2>
+    <h2>WDD 130</h2>
+  </header>
+
+  <main>
+    <hr />
+    <h2>Overview</h2>
+
+    <h3>Purpose</h3>
+    <p>Bringing adventure to the adventurers</p>
+
+    <h3>Audience</h3>
+    <p>Those who dare have fun</p>
+
+    <hr />
+    <h2>Branding</h2>
+
+    <h3>Website Logo</h3>
+    <img src="images/rafting image.jpg" alt="Logo image" style="max-width: 250px; border-radius: 12px;" />
+
+    <hr />
+    <h2>Style Guide</h2>
+
+    <h3>Color Palette</h3>
+    <table class="colors">
+      <tr>
+        <th>Primary</th>
+        <th>Secondary</th>
+        <th>Accent 1</th>
+        <th>Accent 2</th>
+      </tr>
+      <tr>
+        <td class="primary"></td>
+        <td class="secondary"></td>
+        <td class="accent1"></td>
+        <td class="accent2"></td>
+      </tr>
+    </table>
+
+    <h3>Typography</h3>
+    <h4>Heading Font: Righteous</h4>
+    <h4>Paragraph Font: Lato</h4>
+
+    <h3>Normal paragraph example</h3>
+    <p>
+      The best Whitewater Rafting in Colorado, White Water Rafting Company offers rafting on the Colorado and Roaring Fork Rivers in Glenwood Springs. Since 1974, we have been family owned and operated.
+    </p>
+
+    <h3>Colored paragraph example</h3>
+    <p class="colored">
+      Trips vary from mild family rides to intense whitewater challenges. Adventure starts here.
+    </p>
+
+    <h3>Navigation with Hover</h3>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Page2</a>
+      <a href="#">Contact Us</a>
+    </nav>
+
+    <hr />
+    <h2>Site Map</h2>
+    <div class="sitemap">
+      <div class="sm-home">Home</div>
+      <div class="sm-page2">Page2</div>
+      <div class="sm-page3">Contact Us</div>
+      <div class="top">&nbsp;</div>
+      <div class="left">&nbsp;</div>
+      <div class="right">&nbsp;</div>
+    </div>
+
+    <hr />
+    <h2>Wireframes</h2>
+    <h3>Home</h3>
+    <img src="https://byui-wdd.github.io/wdd130/rafting_images/wireframe_home.png" alt="home page wireframe" />
+  </main>
+</body>
+
+</html>

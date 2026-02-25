@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Images of Christ</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <style>
+        body {
+            background: black;
+            margin: 0;
+        }
+
+        #wrapper {
+            width: 800px;
+            margin: 0 auto;
+        }
+
+        nav {
+            color: white;
+            text-align: center;
+            font-family: Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+        }
+
+        #gallery {
+            display: grid;
+            grid-template-columns: repeat(4, 200px);
+            border: 15px solid white;
+            width: 100%;
+            background-color: #ddd;
+            background-image:
+                linear-gradient(45deg, #ccc 26%, transparent 26%),
+                linear-gradient(135deg, #ccc 26%, transparent 26%),
+                linear-gradient(45deg, transparent 75%, #ccc 75%),
+                linear-gradient(135deg, transparent 75%, #ccc 75%);
+            background-size: 20px 20px;
+            background-position: 0 0, 10px 0, 10px -10px, 0px 10px;
+        }
+
+        #gallery a {
+            cursor: url('images/small/christus.png'), pointer;
+        }
+
+        #gallery img {
+            width: 200px;
+            height: 300px;
+            opacity: 50%;
+            display: block;
+        }
+
+        #gallery img:hover {
+            opacity: 100%;
+        }
+    </style>
+</head>
+
+<body>
+
+<div id="wrapper">
+
+    <nav>
+        <h1>Christ Art Gallery</h1>
+    </nav>
+
+    <main>
+        <div id="gallery">
+
+            <a href="images/big/img1.jpg"><img src="images/small/img1.jpg" alt="Christ artwork 1"></a>
+            <a href="images/big/img2.jpg"><img src="images/small/img2.jpg" alt="Christ artwork 2"></a>
+            <a href="images/big/img3.jpg"><img src="images/small/img3.jpg" alt="Christ artwork 3"></a>
+            <a href="images/big/img4.jpg"><img src="images/small/img4.jpg" alt="Christ artwork 4"></a>
+
+            <a href="images/big/img5.jpg"><img src="images/small/img5.jpg" alt="Christ artwork 5"></a>
+            <a href="images/big/img6.jpg"><img src="images/small/img6.jpg" alt="Christ artwork 6"></a>
+            <a href="images/big/img7.jpg"><img src="images/small/img7.jpg" alt="Christ artwork 7"></a>
+            <a href="images/big/img8.jpg"><img src="images/small/img8.jpg" alt="Christ artwork 8"></a>
+
+            <a href="images/big/img9.jpg"><img src="images/small/img9.jpg" alt="Christ artwork 9"></a>
+            <a href="images/big/img10.jpg"><img src="images/small/img10.jpg" alt="Christ artwork 10"></a>
+            <a href="images/big/img11.jpg"><img src="images/small/img11.jpg" alt="Christ artwork 11"></a>
+            <a href="images/big/img12.jpg"><img src="images/small/img12.jpg" alt="Christ artwork 12"></a>
+
+        </div>
+    </main>
+
+</div>
+
+</body>
+</html>

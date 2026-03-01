@@ -1,94 +1,105 @@
-<!DOCTYPE html> 
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <title>Ryan Wirth | WDD 130 Portal</title>
-    <link rel="stylesheet" href="styles/style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ryan Wirth | WDD 130 Portal</title>
+  <link rel="stylesheet" href="styles/style.css">
 </head>
 
 <body>
 
-<header>
+  <header>
     <h1>Ryan Wirth</h1>
     <h2>WDD 130</h2>
     <img src="images/web logo.png" alt="Website Logo" width="80">
-</header>
+  </header>
 
-<nav>
+  <nav aria-label="Main navigation">
     <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="wwr/index.html">WWR</a></li>
-        <li><a href="ice.html">ICE</a></li>
-        <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="wwr.html">WWR</a></li>
+      <li><a href="ice.html">ICE</a></li>
+      <li><a href="aboutme.html">About Me</a></li>
     </ul>
-</nav>
+  </nav>
 
-<main>
+  <main>
 
     <section>
-        <h2>Welcome</h2>
-        <p>This is my portal page for WDD 130. All projects and assignments for this class will be linked here.</p>
+      <h2>Welcome</h2>
+      <p>
+        This is my portal page for WDD 130. All assignments and projects for this class
+        are linked here and organized in one place.
+      </p>
     </section>
 
     <section>
-        <h3>About the Class</h3>
-        <p>In this class I am learning how to use HTML and CSS to build websites. Even though I am studying cybersecurity, understanding how websites are structured helps me better understand how they work and how they can be secured.</p>
+      <h3>About the Class</h3>
+      <p>
+        In this class I am learning how to build websites using HTML and CSS.
+        Even though I am studying cybersecurity, understanding how websites are structured
+        helps me better understand how they work and how they can be secured.
+      </p>
     </section>
 
     <section>
-        <h3>Picture</h3>
-        <img src="images/ryan prof photo.png" alt="Ryan Wirth Profile Photo" width="250">
+      <h3>Profile</h3>
+      <img src="images/ryan prof photo.png" alt="Ryan Wirth Profile Photo" width="250">
     </section>
 
     <section>
-        <h3>Things I Am Learning</h3>
-        <ul>
-            <li>HTML structure</li>
-            <li>CSS styling</li>
-            <li>Website layout with Grid</li>
-        </ul>
+      <h3>Things I Am Learning</h3>
+      <ul>
+        <li>HTML page structure</li>
+        <li>CSS styling and layouts</li>
+        <li>Using Grid for layout design</li>
+      </ul>
     </section>
 
     <section>
-        <h3>Schedule</h3>
-        <table>
-            <tr>
-                <th>Week</th>
-                <th>Topic</th>
-            </tr>
-            <tr>
-                <td>1</td>
-                <td>HTML</td>
-            </tr>
-            <tr>
-                <td>2</td>
-                <td>CSS</td>
-            </tr>
-        </table>
+      <h3>Course Schedule</h3>
+      <table>
+        <thead>
+          <tr>
+            <th scope="col">Week</th>
+            <th scope="col">Topic</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>1</td>
+            <td>HTML Fundamentals</td>
+          </tr>
+          <tr>
+            <td>2</td>
+            <td>CSS Fundamentals</td>
+          </tr>
+        </tbody>
+      </table>
     </section>
 
     <section>
-        <h3>Contact Form</h3>
-        <form>
-            <label for="name">Name:</label>
-            <input type="text" id="name" name="name">
+      <h3>Contact</h3>
+      <form action="#" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name">
 
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email">
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
 
-            <label for="message">Message:</label>
-            <textarea id="message" name="message"></textarea>
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" rows="5"></textarea>
 
-            <button type="submit">Submit</button>
-        </form>
+        <button type="submit">Submit</button>
+      </form>
     </section>
 
-</main>
+  </main>
 
-<footer>
+  <footer>
     <p>© 2026 Ryan Wirth | WDD 130</p>
-</footer>
+  </footer>
 
 </body>
 </html>
-<!-- test -->

@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitKit | Home</title>
+
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #FFFFFF;
+      color: #000000;
+      line-height: 1.6;
+    }
+
+    header {
+      background: #000000;
+      color: #FFFFFF;
+      padding: 15px;
+    }
+
+    header img {
+      height: 45px;
+      vertical-align: middle;
+      margin-right: 10px;
+    }
+
+    nav a {
+      color: #FFFFFF;
+      text-decoration: none;
+      margin-right: 15px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      color: #4CC9F0;
+    }
+
+    .container {
+      max-width: 900px;
+      margin: 0 auto;
+      padding: 20px;
+    }
+
+    .hero {
+      background: #4CC9F0;
+      padding: 20px;
+      border-radius: 10px;
+    }
+
+    .hero h1 {
+      margin-top: 0;
+      color: #000000;
+    }
+
+    .button {
+      display: inline-block;
+      background: #E63946;
+      color: #FFFFFF;
+      padding: 10px 14px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      margin-top: 10px;
+    }
+
+    .button:hover {
+      opacity: 0.9;
+    }
+
+    .two-images {
+      display: flex;
+      gap: 15px;
+      margin-top: 20px;
+      flex-wrap: wrap;
+    }
+
+    .two-images img {
+      width: 100%;
+      max-width: 430px;
+      border-radius: 10px;
+      border: 2px solid #000000;
+    }
+
+    footer {
+      margin-top: 30px;
+      padding: 15px;
+      background: #000000;
+      color: #FFFFFF;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="images/FITKIT.png" alt="FitKit logo">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="bodytypes.html">Body Types</a>
+        <a href="workoutplans.html">Workout Plans</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <section class="hero">
+      <h1>Welcome to FitKit</h1>
+      <p>
+        FitKit helps you figure out what to workout based on your body type and your goal.
+        If you want to gain muscle, lose fat, or just get started, this site keeps it simple.
+      </p>
+      <a class="button" href="bodytypes.html">Start with Body Types</a>
+    </section>
+
+    <h2>How it works</h2>
+    <ol>
+      <li>Pick the body type that matches you best.</li>
+      <li>Choose your goal (muscle gain, fat loss, or beginner).</li>
+      <li>Follow a simple weekly plan.</li>
+    </ol>
+
+    <div class="two-images">
+      <img src="images/training1.png" alt="Training image">
+      <img src="images/cardio1.jpg" alt="Cardio image">
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 FitKit | WDD 130</p>
+  </footer>
+</body>
+</html>

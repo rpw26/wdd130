@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FitKit | Workout Plans</title>
+
+  <style>
+    body { margin: 0; font-family: Arial, Helvetica, sans-serif; background:#FFFFFF; color:#000000; line-height:1.6; }
+    header { background:#000000; color:#FFFFFF; padding:15px; }
+    header img { height:45px; vertical-align: middle; margin-right:10px; }
+    nav a { color:#FFFFFF; text-decoration:none; margin-right:15px; font-weight:bold; }
+    nav a:hover { color:#4CC9F0; }
+    .container { max-width:900px; margin:0 auto; padding:20px; }
+    h1 { color:#E63946; }
+    .plan { border:2px solid #000000; border-radius:10px; padding:15px; margin-bottom:15px; }
+    .images { display:flex; gap:15px; flex-wrap:wrap; margin-top:10px; }
+    .images img { width:100%; max-width:430px; border-radius:10px; border:2px solid #000000; }
+    table { width:100%; border-collapse: collapse; margin-top: 10px; }
+    th, td { border:1px solid #000000; padding:10px; text-align:left; }
+    th { background:#4CC9F0; }
+    footer { margin-top:30px; padding:15px; background:#000000; color:#FFFFFF; text-align:center; }
+  </style>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <img src="images/FITKIT.png" alt="FitKit logo">
+      <nav>
+        <a href="index.html">Home</a>
+        <a href="bodytypes.html">Body Types</a>
+        <a href="workoutplans.html">Workout Plans</a>
+      </nav>
+    </div>
+  </header>
+
+  <main class="container">
+    <h1>Workout Plans</h1>
+    <p>
+      These are simple starter plans. Pick the goal that matches what you want to look like.
+      Repeat the same week for a few weeks and slowly increase weight.
+    </p>
+
+    <div class="plan">
+      <h2>Muscle Gain</h2>
+      <ul>
+        <li>Lift 4 days a week</li>
+        <li>Focus on squats, bench, rows, deadlifts</li>
+        <li>Low cardio (1–2 days)</li>
+      </ul>
+    </div>
+
+    <div class="plan">
+      <h2>Fat Loss</h2>
+      <ul>
+        <li>Lift 3 days a week</li>
+        <li>Cardio 3 days a week</li>
+        <li>Walk more and stay active</li>
+      </ul>
+    </div>
+
+    <div class="plan">
+      <h2>Beginner Plan</h2>
+      <ul>
+        <li>Full-body workouts 3 days a week</li>
+        <li>Learn form first, then add weight</li>
+        <li>Optional easy cardio on off days</li>
+      </ul>
+    </div>
+
+    <h2>Example Weekly Schedule</h2>
+    <table>
+      <tr>
+        <th>Day</th>
+        <th>Workout</th>
+      </tr>
+      <tr><td>Mon</td><td>Lift (Full Body or Upper)</td></tr>
+      <tr><td>Tue</td><td>Cardio / Walk</td></tr>
+      <tr><td>Wed</td><td>Lift (Lower or Full Body)</td></tr>
+      <tr><td>Thu</td><td>Cardio / Walk</td></tr>
+      <tr><td>Fri</td><td>Lift (Full Body or Upper)</td></tr>
+      <tr><td>Sat</td><td>Optional Cardio / Rest</td></tr>
+      <tr><td>Sun</td><td>Rest</td></tr>
+    </table>
+
+    <div class="images">
+      <img src="images/db1.jpg" alt="Dumbbell training image">
+      <img src="images/db2.png" alt="Bench press image">
+    </div>
+  </main>
+
+  <footer>
+    <p>© 2026 FitKit | WDD 130</p>
+  </footer>
+</body>
+</html>

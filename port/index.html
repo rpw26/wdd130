@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ryan Wirth | Cybersecurity Portfolio</title>
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: Arial, sans-serif;
+    }
+
+    body {
+      background: #0b1220;
+      color: #e5e7eb;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(135deg, #111827, #1f2937);
+      padding: 60px 20px;
+      text-align: center;
+      border-bottom: 1px solid #374151;
+    }
+
+    header h1 {
+      font-size: 2.5rem;
+      margin-bottom: 10px;
+    }
+
+    header p {
+      font-size: 1.1rem;
+      color: #93c5fd;
+      margin-bottom: 8px;
+    }
+
+    header .contact {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+    }
+
+    nav {
+      background: #111827;
+      padding: 14px 20px;
+      text-align: center;
+      position: sticky;
+      top: 0;
+      border-bottom: 1px solid #1f2937;
+    }
+
+    nav a {
+      color: #e5e7eb;
+      text-decoration: none;
+      margin: 0 12px;
+      font-size: 0.95rem;
+    }
+
+    nav a:hover {
+      color: #60a5fa;
+    }
+
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 40px 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      font-size: 1.6rem;
+      margin-bottom: 16px;
+      color: #93c5fd;
+      border-bottom: 2px solid #1f2937;
+      padding-bottom: 8px;
+    }
+
+    .card {
+      background: #111827;
+      border: 1px solid #1f2937;
+      border-radius: 12px;
+      padding: 20px;
+      margin-bottom: 18px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 16px;
+    }
+
+    ul {
+      padding-left: 20px;
+    }
+
+    li {
+      margin-bottom: 8px;
+    }
+
+    .skills span {
+      display: inline-block;
+      background: #1e3a8a;
+      color: white;
+      padding: 8px 12px;
+      border-radius: 999px;
+      margin: 6px 6px 0 0;
+      font-size: 0.9rem;
+    }
+
+    .project-title {
+      font-size: 1.1rem;
+      color: #f8fafc;
+      margin-bottom: 8px;
+    }
+
+    .small {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+    }
+
+    footer {
+      text-align: center;
+      padding: 30px 20px;
+      color: #94a3b8;
+      border-top: 1px solid #1f2937;
+      margin-top: 30px;
+    }
+
+    a.button {
+      display: inline-block;
+      margin-top: 14px;
+      background: #2563eb;
+      color: white;
+      text-decoration: none;
+      padding: 10px 18px;
+      border-radius: 8px;
+    }
+
+    a.button:hover {
+      background: #1d4ed8;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Ryan Wirth</h1>
+    <p>Aspiring Cybersecurity Analyst | SOC & Cloud Security</p>
+    <div class="contact">
+      <div>(480) 408-8568</div>
+      <div>ryanwirth25@gmail.com</div>
+    </div>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#projects">Projects</a>
+    <a href="#experience">Experience</a>
+    <a href="#education">Education</a>
+    <a href="#awards">Awards</a>
+  </nav>
+
+  <div class="container">
+    <section id="about">
+      <h2>About Me</h2>
+      <div class="card">
+        <p>
+          I am an aspiring Cybersecurity Analyst with hands-on experience in SOC workflows,
+          cloud deployments, SIEM monitoring, and security investigations. I enjoy learning through
+          labs, building projects, and solving real security problems using tools like Microsoft Sentinel,
+          Microsoft Defender, Splunk, AWS, Terraform, and Docker.
+        </p>
+      </div>
+    </section>
+
+    <section id="skills">
+      <h2>Skills</h2>
+      <div class="card skills">
+        <span>AWS</span>
+        <span>Azure</span>
+        <span>Microsoft Sentinel</span>
+        <span>Microsoft Defender</span>
+        <span>Splunk</span>
+        <span>Terraform</span>
+        <span>Docker</span>
+        <span>Log Analysis</span>
+        <span>Alert Triage</span>
+        <span>IAM</span>
+        <span>Least Privilege</span>
+        <span>Authentication</span>
+        <span>TCP/IP</span>
+        <span>DNS</span>
+        <span>HTTP</span>
+        <span>HTTPS</span>
+        <span>Windows</span>
+        <span>Linux</span>
+        <span>French</span>
+        <span>Swahili</span>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>Projects & Hands-On Experience</h2>
+      <div class="grid">
+        <div class="card">
+          <div class="project-title">SOC Environment Lab</div>
+          <p class="small">
+            Built a SOC environment using Microsoft Sentinel and Microsoft Defender, configured alerts,
+            and investigated incidents through completion.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="project-title">AWS Cloud Deployments</div>
+          <p class="small">
+            Deployed 10+ web applications on AWS using EC2, S3, and authentication while applying
+            secure access controls.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="project-title">Static Website Hosting</div>
+          <p class="small">
+            Hosted public static websites through Amazon S3 with secure bucket policies and access control settings.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="project-title">Infrastructure as Code</div>
+          <p class="small">
+            Provisioned and secured cloud infrastructure using Terraform to automate repeatable deployments.
+          </p>
+        </div>
+
+        <div class="card">
+          <div class="project-title">TryHackMe Practice</div>
+          <p class="small">
+            Completed 65+ TryHackMe rooms and maintained a 200+ day streak while strengthening hands-on security skills.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience">
+      <h2>Professional Experience</h2>
+      <div class="card">
+        <div class="project-title">Church of Jesus Christ of Latter-day Saints</div>
+        <p class="small">Full-Time Volunteer | 2023 - 2025</p>
+        <ul>
+          <li>Provided thousands of hours of culturally sensitive, practical support to African refugee communities.</li>
+          <li>Coordinated service and donation projects for community needs.</li>
+          <li>Taught around 30 one-hour lessons weekly and communicated with 50+ people daily.</li>
+          <li>Delivered presentations and led large group discussions.</li>
+        </ul>
+      </div>
+
+      <div class="card">
+        <div class="project-title">Freddy's, Fat Cats, Five Guys</div>
+        <p class="small">Line Cook | Cashier</p>
+        <ul>
+          <li>Worked accurately in fast-paced, high-pressure environments.</li>
+          <li>Built strong customer service, teamwork, and communication skills.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="education">
+      <h2>Education</h2>
+      <div class="card">
+        <div class="project-title">Brigham Young University - Idaho</div>
+        <p class="small">2025 - 2029</p>
+      </div>
+    </section>
+
+    <section id="awards">
+      <h2>Awards & Certifications</h2>
+      <div class="card">
+        <ul>
+          <li>Advent of Cyber 2024 & 2025 Certification</li>
+          <li>Boy Scouts of America - Eagle Scout</li>
+        </ul>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact</h2>
+      <div class="card">
+        <p>Email: ryanwirth25@gmail.com</p>
+        <p>Phone: (480) 408-8568</p>
+        <a class="button" href="mailto:ryanwirth25@gmail.com">Email Me</a>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>Ryan Wirth Cybersecurity Portfolio</p>
+  </footer>
+</body>
+</html>

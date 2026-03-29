@@ -1,0 +1,144 @@
+body {
+    margin: 0;
+    font-family: "Roboto", Arial, sans-serif;
+    background-color: #111;
+    color: #fff;
+}
+
+header {
+    background-color: #111;
+    color: #fff;
+    padding: 20px 40px;
+    border-bottom: 3px solid #2ecc71;
+}
+
+.logo h1 {
+    margin: 0;
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 2rem;
+}
+
+nav {
+    margin-top: 15px;
+}
+
+nav a {
+    color: #fff;
+    text-decoration: none;
+    margin-right: 20px;
+    font-weight: 500;
+    font-size: 1rem;
+}
+
+nav a:hover {
+    color: #2ecc71;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 40px;
+    background-color: #555;
+}
+
+.hero img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.hero-text h2 {
+    font-family: "Montserrat", Arial, sans-serif;
+    font-size: 2.2rem;
+    margin-top: 0;
+}
+
+.hero-text p {
+    line-height: 1.6;
+    font-size: 1rem;
+}
+
+.about,
+.meals {
+    padding: 50px 40px;
+    background-color: #111;
+}
+
+.workouts {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    gap: 30px;
+    padding: 50px 40px;
+    background-color: #555;
+}
+
+.workouts img {
+    width: 100%;
+    border-radius: 10px;
+}
+
+.about h2,
+.workouts h2,
+.meals h2 {
+    font-family: "Montserrat", Arial, sans-serif;
+    color: #2ecc71;
+    font-size: 2rem;
+    margin-top: 0;
+}
+
+.about p,
+.workouts p,
+.meals p {
+    line-height: 1.6;
+    font-size: 1rem;
+    max-width: 800px;
+}
+
+.button {
+    display: inline-block;
+    margin-top: 15px;
+    background-color: #2ecc71;
+    color: #111;
+    text-decoration: none;
+    padding: 12px 24px;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.button:hover {
+    background-color: #fff;
+    color: #111;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #000;
+    border-top: 3px solid #2ecc71;
+}
+
+footer p {
+    margin: 0;
+}
+
+@media screen and (max-width: 800px) {
+    .hero,
+    .workouts {
+        grid-template-columns: 1fr;
+    }
+
+    header {
+        text-align: center;
+    }
+
+    nav {
+        margin-top: 10px;
+    }
+
+    nav a {
+        display: inline-block;
+        margin: 8px 10px;
+    }
+}

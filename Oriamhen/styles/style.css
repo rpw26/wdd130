@@ -3,11 +3,11 @@ body {
     font-family: "Roboto", Arial, sans-serif;
     background-color: #111;
     color: #fff;
+    font-size: 18px;
 }
 
 header {
     background-color: #111;
-    color: #fff;
     padding: 20px 40px;
     border-bottom: 3px solid #2ecc71;
 }
@@ -15,7 +15,7 @@ header {
 .logo h1 {
     margin: 0;
     font-family: "Montserrat", Arial, sans-serif;
-    font-size: 2rem;
+    font-size: 2.5rem;
 }
 
 nav {
@@ -27,7 +27,7 @@ nav a {
     text-decoration: none;
     margin-right: 20px;
     font-weight: 500;
-    font-size: 1rem;
+    font-size: 1.1rem;
 }
 
 nav a:hover {
@@ -39,29 +39,29 @@ nav a:hover {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 30px;
-    padding: 50px 40px;
+    padding: 30px 90px;
     background-color: #555;
 }
 
 .hero img {
     width: 100%;
-    border-radius: 10px;
+    border-radius: 50px;
 }
 
 .hero-text h2 {
     font-family: "Montserrat", Arial, sans-serif;
-    font-size: 2.2rem;
+    font-size: 2.5rem;
     margin-top: 0;
 }
 
 .hero-text p {
-    line-height: 1.6;
-    font-size: 1rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
 }
 
 .about,
 .meals {
-    padding: 50px 40px;
+    padding: 60px 40px;
     background-color: #111;
 }
 
@@ -70,13 +70,18 @@ nav a:hover {
     grid-template-columns: 1fr 1fr;
     align-items: center;
     gap: 30px;
-    padding: 50px 40px;
+    padding: 60px 40px;
     background-color: #555;
 }
 
-.workouts img {
+.workouts img,
+.about img,
+.meals img {
     width: 100%;
+    max-width: 600px;
     border-radius: 10px;
+    display: block;
+    margin: 20px auto;
 }
 
 .about h2,
@@ -84,27 +89,28 @@ nav a:hover {
 .meals h2 {
     font-family: "Montserrat", Arial, sans-serif;
     color: #2ecc71;
-    font-size: 2rem;
+    font-size: 2.2rem;
     margin-top: 0;
 }
 
 .about p,
 .workouts p,
 .meals p {
-    line-height: 1.6;
-    font-size: 1rem;
+    line-height: 1.7;
+    font-size: 1.1rem;
     max-width: 800px;
 }
 
 .button {
     display: inline-block;
-    margin-top: 15px;
+    margin-top: 20px;
     background-color: #2ecc71;
     color: #111;
     text-decoration: none;
-    padding: 12px 24px;
+    padding: 14px 26px;
     border-radius: 6px;
     font-weight: bold;
+    font-size: 1rem;
 }
 
 .button:hover {
@@ -121,6 +127,22 @@ footer {
 
 footer p {
     margin: 0;
+    font-size: 0.9rem;
+}
+
+.medium-img {
+    width: 450px;
+    max-width: 100%;
+    display: block;
+    margin: 20px auto;
+}
+
+.hero img {
+    max-width: 500px;
+}
+
+.workouts img {
+    max-width: 500px;
 }
 
 @media screen and (max-width: 800px) {

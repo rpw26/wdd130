@@ -15,12 +15,13 @@
     <img src="images/web logo.png" alt="Website Logo" width="80">
   </header>
 
-  <nav aria-label="Main navigation">
+  <nav>
     <ul>
-      <li><a href="index.html" aria-current="page">Home</a></li>
+      <li><a href="index.html">Home</a></li>
       <li><a href="wwr.html">WWR</a></li>
       <li><a href="ice.html">ICE</a></li>
       <li><a href="aboutme.html">About Me</a></li>
+      <li><a href="https://rpw26.github.io/wdd130/client_report.html">Client Report</a></li>
     </ul>
   </nav>
 
@@ -31,6 +32,14 @@
       <p>
         This is my portal page for WDD 130. All assignments and projects for this class
         are linked here and organized in one place.
+      </p>
+    </section>
+
+    <section>
+      <h3>Client Report</h3>
+      <p>
+        View my client/developer project report here:
+        <a href="https://rpw26.github.io/wdd130/client_report.html">Client Report Page</a>
       </p>
     </section>
 
@@ -60,36 +69,32 @@
     <section>
       <h3>Course Schedule</h3>
       <table>
-        <thead>
-          <tr>
-            <th scope="col">Week</th>
-            <th scope="col">Topic</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>1</td>
-            <td>HTML Fundamentals</td>
-          </tr>
-          <tr>
-            <td>2</td>
-            <td>CSS Fundamentals</td>
-          </tr>
-        </tbody>
+        <tr>
+          <th>Week</th>
+          <th>Topic</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>HTML Fundamentals</td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td>CSS Fundamentals</td>
+        </tr>
       </table>
     </section>
 
     <section>
       <h3>Contact</h3>
-      <form action="#" method="post">
-        <label for="name">Name:</label>
-        <input type="text" id="name" name="name">
+      <form>
+        <label>Name:</label>
+        <input type="text">
 
-        <label for="email">Email:</label>
-        <input type="email" id="email" name="email">
+        <label>Email:</label>
+        <input type="email">
 
-        <label for="message">Message:</label>
-        <textarea id="message" name="message" rows="5"></textarea>
+        <label>Message:</label>
+        <textarea rows="5"></textarea>
 
         <button type="submit">Submit</button>
       </form>
